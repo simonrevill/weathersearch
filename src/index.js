@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from './components/App/App';
+import './styles.css';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+/*
+  WeatherSearch v1.0.0
+  Design & Code by Simon Revill
+  Date: 23/08/2019
+  
+  Next Update: 
+  
+  1. Add wind speed and direction to DayTabSummary and DayTabPane components.
+  2. Check middayDescription and middayWeatherIcon - do they work in the early morning?
+  3. Sort out size of background for the welcome screen - needs to work on XL screens too.
+ */
+
+const rootElement = document.getElementById('root');
+ReactDOM.render(<App />, rootElement);
